@@ -12,10 +12,12 @@ import java.awt.event.ActionEvent;
 import javax.swing.border.BevelBorder;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeEvent;
 
 public class MainWindow {
 
-	private JFrame frame;
+	private JFrame mainFrame;
 	private JTable MainTable;
 	private JTextField SearchField_1;
 	private JTextField SearchField_2;
@@ -86,7 +88,7 @@ public class MainWindow {
 			public void run() {
 				try {
 					MainWindow window = new MainWindow();
-					window.frame.setVisible(true);
+					window.mainFrame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -110,19 +112,39 @@ public class MainWindow {
 		 
 		
 		
-		frame = new JFrame();
-		frame.getContentPane().setBackground(new Color(192,192,192));
-		frame.setBounds(100, 100, 1024, 768);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		mainFrame = new JFrame();
+		mainFrame.getContentPane().setBackground(new Color(192,192,192));
+		mainFrame.setBounds(100, 100, 1024, 768);
+		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainFrame.getContentPane().setLayout(null);
 		
 		JPanel MainPanel = new JPanel();
 		MainPanel.setBackground(BGM);
 		MainPanel.setBounds(10, 10, 988, 707);
-		frame.getContentPane().add(MainPanel);
+		mainFrame.getContentPane().add(MainPanel);
 		MainPanel.setLayout(null);
 		
 		JPanel PanelCommande = new JPanel();
+		PanelCommande.addPropertyChangeListener(new PropertyChangeListener() {
+			public void propertyChange(PropertyChangeEvent arg0) {
+				PanelCommande.repaint();//Refresh
+			}
+		});
+		PanelCommande.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				/* Allume button Commamde
+				 * Eteint CLient
+				 * Eteint Article
+				 * Désafiche Article/Client
+				 * Affiche Commande 
+				 */
+
+				
+			
+			
+			}
+		});
 		PanelCommande.setLayout(null);
 		PanelCommande.setBackground(BGM);
 		PanelCommande.setBorder(new LineBorder(BR, 2, true));
@@ -142,36 +164,86 @@ public class MainWindow {
 		CommandeLabelText.setBounds(0, 0, 100, 30);
 		PanelCommande.add(CommandeLabelText);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(2, 98, 96, 4);
-		PanelCommande.add(panel);
+		JPanel panelcache1 = new JPanel();
+		panelcache1.setBounds(2, 98, 96, 4);
+		PanelCommande.add(panelcache1);
 		
 		JPanel PanelClient = new JPanel();
 		PanelClient.setBackground(BGS);
 		PanelClient.setLayout(null);
 		PanelClient.setBorder(new LineBorder(BR, 2, true));
 		PanelClient.setBounds(230, 22, 100, 100);
+		
 		MainPanel.add(PanelClient);
 		
-		JLabel LabelClientPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\028-user-11.png"));
+		JLabel LabelClientPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\user.png"));
+		LabelClientPicto.setFocusable(false);
+		LabelClientPicto.setFocusTraversalKeysEnabled(false);
 		LabelClientPicto.setBackground(BGM);
 		LabelClientPicto.setBounds(0, 20, 100, 80);
 		PanelClient.add(LabelClientPicto);
 		
 		JLabel LabelClientText = new JLabel("Client");
-		LabelClientText.setForeground(new Color(0, 0, 0));
+		LabelClientText.setFocusTraversalKeysEnabled(false);
+		LabelClientText.setFocusable(false);
+		LabelClientText.setForeground(BGM);
 		LabelClientText.setHorizontalAlignment(SwingConstants.CENTER);
 		LabelClientText.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		LabelClientText.setBackground(BGM);
 		LabelClientText.setBounds(0, 0, 100, 30);
 		PanelClient.add(LabelClientText);
+		PanelClient.addMouseListener(
+				new MouseAdapter() {
+					public void mouseClicked(MouseEvent e) {
+						/* Allume button Client
+						 * Eteint Commande
+						 * Eteint Article
+						 * Désaffiche Article/Commande
+						 * Affiche Client
+						 */
+						PanelClient.setBackground(BGM);
+						JLabel LabelClientPicto2 = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\028-user-11.png"));
+						LabelClientPicto2.setBackground(BGM);
+						LabelClientPicto2.setBounds(0, 20, 100, 80);
+						LabelClientText.setForeground(BGS);
+						PanelClient.add(LabelClientPicto2);
+						PanelClient.remove(LabelClientPicto);
+						PanelClient.repaint();//Refresh
+					}
+				}
+		);
+		
 		
 		JPanel PanelArticle = new JPanel();
+		PanelArticle.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				/* Allume button Article
+				 * Eteint CLient
+				 * Eteint Commande
+				 * Désafiche Commande/Client
+				 * Affiche Article 
+				 */
+			}
+		});
 		PanelArticle.setBackground(BGS);
 		PanelArticle.setLayout(null);
 		PanelArticle.setBorder(new LineBorder(BR, 2, true));
 		PanelArticle.setBounds(120, 22, 100, 100);
 		MainPanel.add(PanelArticle);
+		
+		JLabel LabelArticlePicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\091-shopping-cart.png"));
+		LabelArticlePicto.setBackground(BGM);
+		LabelArticlePicto.setBounds(0, 20, 100, 80);
+		PanelArticle.add(LabelArticlePicto);
+		
+		JLabel LabelArticletText = new JLabel("Article");
+		LabelArticletText.setForeground(new Color(0, 0, 0));
+		LabelArticletText.setHorizontalAlignment(SwingConstants.CENTER);
+		LabelArticletText.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		LabelArticletText.setBackground(BGM);
+		LabelArticletText.setBounds(0, 0, 100, 30);
+		PanelArticle.add(LabelArticletText);
 		
 		JPanel PanelPrint = new JPanel();
 		PanelPrint.setBounds(532, 10, 100, 100);
@@ -196,24 +268,22 @@ public class MainWindow {
 		PannelOption.setBounds(768, 10, 100, 100);		
 		MainPanel.add(PannelOption);
 		
-		
-		JLabel lblNewLabel = new JLabel (new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\088-tools.png"));
-		lblNewLabel.setBounds(0, 20, 100, 80);
-		PannelOption.add(lblNewLabel);
-		
 		JPanel PanelQuit = new JPanel();
 		PanelQuit.setLayout(null);
 		PanelQuit.setBorder(new LineBorder(BR, 5, true));
 		PanelQuit.setBounds(878, 10, 100, 100);
 		MainPanel.add(PanelQuit);
 		
-		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(10, 120, 968, 575);
+		MainPanel.add(panel_1);
+		panel_1.setLayout(null);
 		
 		JPanel PanelMainAffichage = new JPanel();
+		PanelMainAffichage.setBounds(0, 0, 968, 575);
+		panel_1.add(PanelMainAffichage);
 		PanelMainAffichage.setBorder(new LineBorder(BR, 2, true));
-		PanelMainAffichage.setBounds(10, 120, 968, 575);
 		PanelMainAffichage.setBackground(BGM);
-		MainPanel.add(PanelMainAffichage);
 		PanelMainAffichage.setLayout(null);
 		
 		JPanel SecondaryPanel = new JPanel();
@@ -259,6 +329,12 @@ public class MainWindow {
 		MainScrollPane.setViewportView(MainTable);
 		
 		JButton CrationButton = new JButton("Ajouter");
+		CrationButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				PanelCommande.setBackground(BGS);
+			}
+		});
 		CrationButton.setForeground(BGS);
 		CrationButton.setBackground(BGM);
 		CrationButton.setBorder(new LineBorder(BR,2,true));
@@ -305,6 +381,13 @@ public class MainWindow {
 		FilterButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		FilterButton.setBounds(806, 11, 139, 34);
 		PanelMainAffichage.add(FilterButton);
+		
+		JPanel PannelMainAcceuil = new JPanel();
+		PannelMainAcceuil.setBackground(BGM);
+		PannelMainAcceuil.setBorder(new LineBorder(BR, 2, true));
+		PannelMainAcceuil.setBounds(0, 0, 968, 575);
+		panel_1.add(PannelMainAcceuil);
+		PannelMainAcceuil.setLayout(null);
 		
 	}
 }

@@ -473,7 +473,7 @@ public class MainWindow {
 		JLabel LabelMainAcceuilPicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/Shopping05.jpg")));
 		LabelMainAcceuilPicto.setBounds(0, 0, 968, 575);
 		PanelMainAcceuil.add(LabelMainAcceuilPicto);
-		PanelMain.add(PanelMainAffichage);
+		PanelMain.add(PanelMainAcceuil);
 // =============================================================================================================
 // PANEL PRINCIPAUX LISTENERS
 		PanelClient.addMouseListener(
@@ -491,6 +491,8 @@ public class MainWindow {
 					PanelCommande.removeAll();
 					PanelClient.removeAll();
 					PanelArticle.removeAll();
+					PanelMain.removeAll();
+					PanelMain.add(PanelMainAffichage);
 					PanelClient.add(PanelCache);
 					PanelCommande.add(LabelCommandePicto);
 					PanelCommande.add(LabelCommandeText);
@@ -501,6 +503,7 @@ public class MainWindow {
 					PanelCommande.repaint();
 					PanelArticle.repaint();//Refresh
 					PanelClient.repaint();
+					PanelMain.repaint();
 					/*
 					 * Afficher PannelMainAffichage
 					 * Cacher MainAcceuil
@@ -524,6 +527,8 @@ public class MainWindow {
 					PanelCommande.removeAll();
 					PanelClient.removeAll();
 					PanelArticle.removeAll();
+					PanelMain.removeAll();
+					PanelMain.add(PanelMainAffichage);
 					PanelArticle.add(PanelCache);
 					PanelCommande.add(LabelCommandePicto);
 					PanelCommande.add(LabelCommandeText);
@@ -534,6 +539,7 @@ public class MainWindow {
 					PanelCommande.repaint();
 					PanelArticle.repaint();//Refresh
 					PanelClient.repaint();
+					PanelMain.repaint();
 				}
 			}
 		);
@@ -553,6 +559,8 @@ public class MainWindow {
 				PanelCommande.removeAll();
 				PanelClient.removeAll();
 				PanelArticle.removeAll();
+				PanelMain.removeAll();
+				PanelMain.add(PanelMainAffichage);
 				PanelCommande.add(PanelCache);
 				PanelCommande.add(LabelCommandePicto2);
 				PanelCommande.add(LabelCommandeText2);
@@ -563,6 +571,7 @@ public class MainWindow {
 				PanelCommande.repaint();
 				PanelArticle.repaint();//Refresh
 				PanelClient.repaint();
+				PanelMain.repaint();
 				}
 			}
 		);

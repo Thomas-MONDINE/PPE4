@@ -220,6 +220,7 @@ public class MainWindow {
 		MainPanel.setLayout(null);
 		JPanel PanelCache = new JPanel();
 		PanelCache.setBounds(2, 98, 96, 4);
+		PanelCache.setBackground(BGM);
 	// ==================== Panel Commande =======================
 		JPanel PanelCommande = new JPanel();
 		JLabel LabelCommandePicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\121-paste.png"));
@@ -490,6 +491,7 @@ public class MainWindow {
 					PanelCommande.removeAll();
 					PanelClient.removeAll();
 					PanelArticle.removeAll();
+					PanelClient.add(PanelCache);
 					PanelCommande.add(LabelCommandePicto);
 					PanelCommande.add(LabelCommandeText);
 					PanelClient.add(LabelClientPicto2);
@@ -522,6 +524,7 @@ public class MainWindow {
 					PanelCommande.removeAll();
 					PanelClient.removeAll();
 					PanelArticle.removeAll();
+					PanelArticle.add(PanelCache);
 					PanelCommande.add(LabelCommandePicto);
 					PanelCommande.add(LabelCommandeText);
 					PanelClient.add(LabelClientPicto);
@@ -550,6 +553,7 @@ public class MainWindow {
 				PanelCommande.removeAll();
 				PanelClient.removeAll();
 				PanelArticle.removeAll();
+				PanelCommande.add(PanelCache);
 				PanelCommande.add(LabelCommandePicto2);
 				PanelCommande.add(LabelCommandeText2);
 				PanelClient.add(LabelClientPicto);

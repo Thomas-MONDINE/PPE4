@@ -212,7 +212,7 @@ public class MainWindow {
 		mainFrame.setBounds(100, 100, 1024, 768);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		mainFrame.getContentPane().setLayout(null);
-	
+		
 		JPanel MainPanel = new JPanel();
 		MainPanel.setBackground(BGM);
 		MainPanel.setBounds(10, 10, 988, 707);
@@ -223,8 +223,8 @@ public class MainWindow {
 		PanelCache.setBackground(BGM);
 	// ==================== Panel Commande =======================
 		JPanel PanelCommande = new JPanel();
-		JLabel LabelCommandePicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\121-paste.png"));
-		JLabel LabelCommandePicto2 = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\121-paste1.png"));
+		JLabel LabelCommandePicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/121-paste.png")));
+		JLabel LabelCommandePicto2 = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/121-paste1.png")));
 		JLabel LabelCommandeText = new JLabel("Commande");
 		JLabel LabelCommandeText2 = new JLabel("Commande");
 		PanelCommande.setLayout(null);
@@ -252,8 +252,8 @@ public class MainWindow {
 	// ====================== Panel Client ==================
 		//Panel Client Déclaration
 		JPanel PanelClient = new JPanel();
-		JLabel LabelClientPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\028-user-11.png"));
-		JLabel LabelClientPicto2 = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\028-user-1.png"));
+		JLabel LabelClientPicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/028-user-11.png")));
+		JLabel LabelClientPicto2 = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/028-user-1.png")));
 		JLabel LabelClientText = new JLabel("Client");
 		JLabel LabelClientText2 = new JLabel("Client");
 		// Panel Client définition
@@ -283,8 +283,8 @@ public class MainWindow {
 	// ====================== Panel Article ==================
 		//Panel Article Déclaration
 		JPanel PanelArticle = new JPanel();
-		JLabel LabelArticlePicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\091-shopping-cart.png"));
-		JLabel LabelArticlePicto2 = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\091-shopping-cart1.png"));
+		JLabel LabelArticlePicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/091-shopping-cart.png")));
+		JLabel LabelArticlePicto2 = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/091-shopping-cart1.png")));
 		JLabel LabelArticleText = new JLabel("Article");
 		JLabel LabelArticleText2 = new JLabel("Article");
 		// Panel Article définition
@@ -313,13 +313,13 @@ public class MainWindow {
 	// =========================================================
 	// Panels Accesoires Déclaration
 		JPanel PanelPrint = new JPanel();
-		JLabel LabelPrintPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\Pictures\\Saved Pictures\\119-printer1GRIS.png"));
+		JLabel LabelPrintPicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/119-printer1GRIS.png")));
 		JLabel LabelPrintText = new JLabel("Imprimer");
 		JPanel PanelOption = new JPanel();
-		JLabel LabelOptionPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\Pictures\\Saved Pictures\\073-settings1.png"));
+		JLabel LabelOptionPicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/073-settings1.png")));
 		JLabel LabelOptionText = new JLabel("Réglages");
 		JPanel PanelQuit = new JPanel();
-		JLabel LabelQuitPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\Pictures\\Saved Pictures\\069-log-in1.png"));
+		JLabel LabelQuitPicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/069-log-in1.png")));
 		JLabel LabelQuitText = new JLabel("Deconexion");
 	// Panel Accessoires Définition
 		PanelPrint.setLayout(null);
@@ -470,7 +470,7 @@ public class MainWindow {
 		PanelMainAcceuil.setBorder(new LineBorder(BR, 2, true));
 		PanelMainAcceuil.setBounds(0, 0, 968, 575);
 		PanelMainAcceuil.setLayout(null);
-		JLabel LabelMainAcceuilPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\Shopping 05.jpg"));
+		JLabel LabelMainAcceuilPicto = new JLabel(new ImageIcon(MainWindow.class.getResource("./Resources/Shopping05.jpg")));
 		LabelMainAcceuilPicto.setBounds(0, 0, 968, 575);
 		PanelMainAcceuil.add(LabelMainAcceuilPicto);
 		PanelMain.add(PanelMainAffichage);

@@ -128,56 +128,56 @@ public class MainWindow {
 			{45, "Black", 225.70, new Integer(2), new Boolean(false)},
 			{46, "White", 99.99, new Integer(20), new Boolean(true)},						    
 			{47, "Brown", "Pool", new Integer(10), new Boolean(false)}};	
-		public Object[] COLONNECOMMANDE= {"Numero","Client","Montant"};
-		public Object[][] DATAARTICLE = {{0, "Ecran",127.5, new Integer(3), new Boolean(true)},
-				{1, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{2, "Disque Dur HDD",99.99, new Integer(20), new Boolean(true)},
-				{3, "Clé USB",10, new Integer(5), new Boolean(false)},
-				{4, "Ecran",127.5, new Integer(3), new Boolean(true)},
-				{5, "Disque Dur SDD",225.70, new Integer(2), new Boolean(false)},
-				{6, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{7, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{8, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{9, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{10, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{11, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{12, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{13, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{14, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{15, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{16, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{17, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{18, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{19, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{20, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{21, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{22, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{23, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{24, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{25, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{26, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{27, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{28, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{29, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{30, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{31, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{32, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{33, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{34, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{35, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{36, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{37, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{38, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{39, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{40, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{41, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{42, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
-				{43, "Clé USB", 10, new Integer(5), new Boolean(false)},
-				{40, "Ecran", 127.5, new Integer(3), new Boolean(true)},
-				{45, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
-				{46, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},						    
-				{47, "Brown", "Pool", new Integer(10), new Boolean(false)}};	
-			public Object[] COLONNEARTICLE= {"Numero","type","prix"};
+	public Object[] COLONNECOMMANDE= {"Numero","Client","Montant"};
+	public Object[][] DATAARTICLE = {{0, "Ecran",127.5, new Integer(3), new Boolean(true)},
+			{1, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{2, "Disque Dur HDD",99.99, new Integer(20), new Boolean(true)},
+			{3, "Clé USB",10, new Integer(5), new Boolean(false)},
+			{4, "Ecran",127.5, new Integer(3), new Boolean(true)},
+			{5, "Disque Dur SDD",225.70, new Integer(2), new Boolean(false)},
+			{6, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{7, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{8, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{9, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{10, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{11, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{12, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{13, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{14, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{15, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{16, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{17, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{18, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{19, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{20, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{21, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{22, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{23, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{24, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{25, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{26, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{27, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{28, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{29, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{30, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{31, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{32, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{33, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{34, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{35, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{36, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{37, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{38, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{39, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{40, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{41, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{42, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},
+			{43, "Clé USB", 10, new Integer(5), new Boolean(false)},
+			{40, "Ecran", 127.5, new Integer(3), new Boolean(true)},
+			{45, "Disque Dur SDD", 225.70, new Integer(2), new Boolean(false)},
+			{46, "Disque Dur HDD", 99.99, new Integer(20), new Boolean(true)},						    
+			{47, "Brown", "Pool", new Integer(10), new Boolean(false)}};	
+	public Object[] COLONNEARTICLE= {"Numero","type","prix"};
 	/**
 	 * Launch the application.
 	 */
@@ -193,7 +193,6 @@ public class MainWindow {
 			}
 		});
 	}
-
 	/**
 	 * Create the application.
 	 */
@@ -207,15 +206,13 @@ public class MainWindow {
 	 * Initialize the contents of the frame.
 	 */
 	public void initialize() {
-
 		
 		mainFrame = new JFrame();
 		mainFrame.getContentPane().setBackground(new Color(192,192,192));
 		mainFrame.setBounds(100, 100, 1024, 768);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		mainFrame.getContentPane().setLayout(null);
-		
-		
+	
 		JPanel MainPanel = new JPanel();
 		MainPanel.setBackground(BGM);
 		MainPanel.setBounds(10, 10, 988, 707);
@@ -229,7 +226,6 @@ public class MainWindow {
 		JLabel LabelCommandePicto2 = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\121-paste1.png"));
 		JLabel LabelCommandeText = new JLabel("Commande");
 		JLabel LabelCommandeText2 = new JLabel("Commande");
-		MainPanel.add(PanelCommande);
 		PanelCommande.setLayout(null);
 		PanelCommande.setBackground(BGS);
 		PanelCommande.setBorder(new LineBorder(BR, 2, true));
@@ -396,6 +392,7 @@ public class MainWindow {
 		PanelSecondaryAffichage.setBounds(10, 11, 813, 185);
 		SecondaryPanel.add(PanelSecondaryAffichage);
 		PanelSecondaryAffichage.setLayout(null);
+		
 	//panel Affichage Client
 		JScrollPane MainScrollPaneClient = new JScrollPane();
 		MainScrollPaneClient.setBorder(new LineBorder(BR,2,true));
@@ -475,7 +472,7 @@ public class MainWindow {
 		JLabel LabelMainAcceuilPicto = new JLabel(new ImageIcon("C:\\Users\\Axo\\eclipse-workspace\\ppe4\\src\\Resources\\Shopping 05.jpg"));
 		LabelMainAcceuilPicto.setBounds(0, 0, 968, 575);
 		PanelMainAcceuil.add(LabelMainAcceuilPicto);
-		PanelMain.add(PanelMainAcceuil);
+		PanelMain.add(PanelMainAffichage);
 // =============================================================================================================
 // PANEL PRINCIPAUX LISTENERS
 		PanelClient.addMouseListener(
@@ -502,6 +499,10 @@ public class MainWindow {
 					PanelCommande.repaint();
 					PanelArticle.repaint();//Refresh
 					PanelClient.repaint();
+					/*
+					 * Afficher PannelMainAffichage
+					 * Cacher MainAcceuil
+					 */
 				}
 			}
 		);
@@ -563,5 +564,4 @@ public class MainWindow {
 		);
 		
 	}
-		
 }

@@ -25,7 +25,7 @@ public class MainWindow {
 	public JTextField SearchField_3;
 	/**
 	 * Initialize the contents of the table.
-	 * and constant color
+	 * and constants colors
 	 */
 	public static final Color BGM = new Color(223,231,236);
 	public static final Color BR = new Color(83,129,142);
